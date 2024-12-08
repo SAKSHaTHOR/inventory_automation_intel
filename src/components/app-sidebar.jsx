@@ -50,7 +50,7 @@ export function AppSidebar() {
               <SidebarMenuItem>
                 <CollapsibleTrigger asChild>
                   <SidebarMenuButton className="flex items-center gap-2">
-                    <Package className="h-5 w-5" />
+                    <Package className="h-7 w-5" />
                     <span>Inventory</span>
                     <span
                       className={`ml-auto transform transition-transform duration-300 ${
@@ -86,14 +86,14 @@ export function AppSidebar() {
                     </SidebarMenuSubItem>
                     <SidebarMenuSubItem>
                       <SidebarMenuButton asChild>
-                        <a href="/inventory/smart-suggestions" className="pl-8">
+                        <a href="/inventory/smart-suggestions" className="pl-8 mb-2">
                           Smart Inventory Suggestions
                         </a>
                       </SidebarMenuButton>
                     </SidebarMenuSubItem>
                     <SidebarMenuSubItem>
                       <SidebarMenuButton asChild>
-                        <a href="/Inventory/demandForcastingAndPrediction" className="pl-8">
+                        <a href="/Inventory/demandForcastingAndPrediction" className="pl-8 mb-2">
                           Demand Forecasting & Prediction
                         </a>
                       </SidebarMenuButton>
@@ -123,7 +123,7 @@ export function AppSidebar() {
                   <SidebarMenuSub>
                     <SidebarMenuSubItem>
                       <SidebarMenuButton asChild>
-                        <a href="/product/verify" className="pl-8">
+                        <a href="/Products/verify" className="pl-8">
                           Verify Products
                         </a>
                       </SidebarMenuButton>
