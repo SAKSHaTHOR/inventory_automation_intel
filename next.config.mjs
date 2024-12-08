@@ -3,7 +3,9 @@ const nextConfig = {
     // reactStrictMode: true,
     // swcMinify: true,
     images: {
+
         domains: ['cdn.pixabay.com','img.freepik.com'],
+
     },
 };
 

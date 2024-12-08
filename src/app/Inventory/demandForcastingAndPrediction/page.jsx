@@ -31,7 +31,7 @@ const ForecastingPage = () => {
                   alt={item.name}
                   width={200}
                   height={200}
-                  className="rounded-md mx-auto"
+                  className="rounded-md mx-auto object-cover"
                 />
                 <h3 className="mt-4 text-lg font-medium">{item.name}</h3>
                 <p className="text-muted-foreground">

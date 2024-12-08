@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
           
         >
         <SidebarProvider  style={{
-    "--sidebar-width": "20rem",
+    "--sidebar-width": "15rem",
     "--sidebar-width-mobile": "20rem",
   }}>
           <AppSidebar collapsible="icon" className="bg-white "/>
