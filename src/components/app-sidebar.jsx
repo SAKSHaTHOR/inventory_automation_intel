@@ -79,7 +79,7 @@ export function AppSidebar() {
                     </SidebarMenuSubItem>
                     <SidebarMenuSubItem>
                       <SidebarMenuButton asChild>
-                        <a href="/inventory/sync" className="pl-8">
+                        <a href="/Inventory/inventorySyncing" className="pl-8">
                           Inventory Syncing
                         </a>
                       </SidebarMenuButton>
