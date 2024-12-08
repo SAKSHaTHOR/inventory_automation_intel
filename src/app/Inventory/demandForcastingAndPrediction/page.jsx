@@ -26,13 +26,15 @@ const ForecastingPage = () => {
                 key={item.id}
                 className="rounded-lg border p-4 shadow hover:shadow-lg transition"
               >
+                <div className="w-auto h-[150px] overflow-hidden ">
                 <Image
                   src={item.image}
                   alt={item.name}
-                  width={200}
-                  height={200}
-                  className="rounded-md mx-auto object-cover"
+                  width={208}
+                  height={150}
+                  className="rounded-md mx-auto object-fill"
                 />
+                </div>
                 <h3 className="mt-4 text-lg font-medium">{item.name}</h3>
                 <p className="text-muted-foreground">
                   Forecasted Demand: <strong>{item.forecastedDemand}</strong>
@@ -51,13 +53,15 @@ const ForecastingPage = () => {
                 key={item.id}
                 className="rounded-lg border p-4 shadow hover:shadow-lg transition"
               >
+               <div className="w-auto h-[150px] overflow-hidden ">
                 <Image
                   src={item.image}
                   alt={item.name}
-                  width={200}
-                  height={200}
-                  className="rounded-md mx-auto"
+                  width={208}
+                  height={150}
+                  className="rounded-md mx-auto object-fill"
                 />
+                </div>
                 <h3 className="mt-4 text-lg font-medium">{item.name}</h3>
                 <p className="text-muted-foreground">
                   Forecasted Demand: <strong>{item.forecastedDemand}</strong>
@@ -76,13 +80,15 @@ const ForecastingPage = () => {
                 key={item.id}
                 className="rounded-lg border p-4 shadow hover:shadow-lg transition"
               >
+                <div className="w-auto h-[150px] overflow-hidden ">
                 <Image
                   src={item.image}
                   alt={item.name}
-                  width={200}
-                  height={200}
-                  className="rounded-md mx-auto"
+                  width={208}
+                  height={150}
+                  className="rounded-md mx-auto object-fill"
                 />
+                </div>
                 <h3 className="mt-4 text-lg font-medium">{item.name}</h3>
                 <p className="text-muted-foreground">
                   Forecasted Demand: <strong>{item.forecastedDemand}</strong>
