@@ -27,7 +27,7 @@ export function AppSidebar() {
 
 
   return (
-    <Sidebar collapsible="icon">
+    <Sidebar collapsible="icon" className="bg-white dark:bg-black z-100">
        <SidebarHeader>LS</SidebarHeader>
       <SidebarContent>
         {/* Main Menu */}
@@ -38,7 +38,7 @@ export function AppSidebar() {
             {/* Dashboard */}
             <SidebarMenuItem>
               <SidebarMenuButton asChild>
-                <a href="/dashboard" className="flex items-center gap-2">
+                <a href="/Home/Dashboard" className="flex items-center gap-2">
                   <Home className="h-5 w-5" />
                   <span>Dashboard</span>
                 </a>
@@ -65,14 +65,14 @@ export function AppSidebar() {
                   <SidebarMenuSub>
                     <SidebarMenuSubItem>
                       <SidebarMenuButton asChild>
-                        <a href="/inventory/add" className="pl-8">
+                        <a href="/Inventory/addProduct" className="pl-8">
                           Add Products
                         </a>
                       </SidebarMenuButton>
                     </SidebarMenuSubItem>
                     <SidebarMenuSubItem>
                       <SidebarMenuButton asChild>
-                        <a href="/inventory/distribution" className="pl-8">
+                        <a href="/Inventory/distribution" className="pl-8">
                           Stock Distribution
                         </a>
                       </SidebarMenuButton>
@@ -93,7 +93,7 @@ export function AppSidebar() {
                     </SidebarMenuSubItem>
                     <SidebarMenuSubItem>
                       <SidebarMenuButton asChild>
-                        <a href="/inventory/forecast" className="pl-8">
+                        <a href="/Inventory/demandForcastingAndPrediction" className="pl-8">
                           Demand Forecasting & Prediction
                         </a>
                       </SidebarMenuButton>
