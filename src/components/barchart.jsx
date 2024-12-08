@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { TrendingUp } from "lucide-react"
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
+import { TrendingUp } from "lucide-react";
+import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 
 import {
   Card,
@@ -10,38 +10,38 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart"
+} from "@/components/ui/chart";
 
 const chartData = [
-  { month: "January", desktop: 186, mobile: 80 },
-  { month: "February", desktop: 305, mobile: 200 },
-  { month: "March", desktop: 237, mobile: 120 },
-  { month: "April", desktop: 73, mobile: 190 },
-  { month: "May", desktop: 209, mobile: 130 },
-  { month: "June", desktop: 214, mobile: 140 },
-]
+  { month: "January", shipped: 500, restocked: 300 },
+  { month: "February", shipped: 450, restocked: 280 },
+  { month: "March", shipped: 520, restocked: 400 },
+  { month: "April", shipped: 480, restocked: 350 },
+  { month: "May", shipped: 530, restocked: 370 },
+  { month: "June", shipped: 600, restocked: 420 },
+];
 
 const chartConfig = {
-  desktop: {
-    label: "Desktop",
+  shipped: {
+    label: "Shipped Items",
     color: "hsl(var(--chart-1))",
   },
-  mobile: {
-    label: "Mobile",
+  restocked: {
+    label: "Restocked Items",
     color: "hsl(var(--chart-2))",
   },
-}
+};
 
-function Barchart() {
+function InventoryBarChart() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Bar Chart - Multiple</CardTitle>
+        <CardTitle>Inventory Trends</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader>
       <CardContent>
@@ -59,21 +59,21 @@ function Barchart() {
               cursor={false}
               content={<ChartTooltipContent indicator="dashed" />}
             />
-            <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
-            <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
+            <Bar dataKey="shipped" fill="var(--color-shipped)" radius={4} />
+            <Bar dataKey="restocked" fill="var(--color-restocked)" radius={4} />
           </BarChart>
         </ChartContainer>
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Trending up by 10% in shipping efficiency <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+          Showing shipping and restocking trends for the last 6 months.
         </div>
       </CardFooter>
     </Card>
-  )
+  );
 }
 
-export default Barchart
+export default InventoryBarChart;
